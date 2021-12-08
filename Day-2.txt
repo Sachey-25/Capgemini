@@ -1,0 +1,259 @@
+Bitwise Operators in Java
+'------------------------
+
+1. and bit wise operator 
+2. OR bit wise operator
+3. not bit wise operator
+
+
+1. & ==> compares currespondance bits of the number on another and generates 1 if both are eqaul. else returns zero
+ 
+2. |==> Compares corresponding bits of any number
+and generates 1 if either bit is 1. else returns 0
+
+3. ~ ==> is a complement operator that just changes the bit from 0 to 1 and 1 to 0.
+
+4. xor ^ ==> compares corresponding bit of numbers and generates 1 if they are not equal, else it returns 0. 
+
+truth table
+===============
+
+A  B  res(A&B)  A  B res(A|B)
+0  0  0         0  0    0 
+0  1  0         1  0    1
+1  0  0         0  1    1
+1  1  1         1  1    1
+
+A  B   res(A^B)   A    ~A
+0  0   0          0     1
+1  0   1          1     0
+0  1   1
+1  1   0 
+----------------------------------------------
+11 ==> 0000 1011
+22 ==> 0001 0110
+11&12-----------------
+       0000 0010  ===> 2*1 ==> 2
+
+11|12-----------------
+       0001 1111  ===> 1+2+4+8+16=>31
+
+11^12-----------------
+       0001 1101  ===> 1+4+8+16===>29
+----------------------------------------------
+left shift
+right shift
+
+11<<12 : Leftshift bitwise operator
+
+11 ==> 0000 1011 << [how many bits you want to shift]
+----->           00 101100 << 2 : 4+8+32=44
+------>          0001 0110 >> 2 : 2
+------------->------------------------
+		00000101
+		      4+1=5
+
+Ternary opertor
+---------------
+Syntax:
+variable <variable_name> = (expression)?value if true : value is false
+
+if the expression resutls true then the first value
+before the colon(:) is assigned to the variable
+else the second value is assigned to the variable.
+================================================================================================
+Java Conditional Statement=
+
+4 types
+=====
+1. if statement
+-----------------
+if statement is used to check any expression/condition true of false.
+
+String mynameis="Sachin";
+
+//logical operators
+//relational operators ==> comparison operators
+//ternary operators
+//assignment operators
+
+if(<Expression/condtion> || boolean value);
+	{
+		/*coding Area*/
+		....
+		....
+		....
+	}
+if condition is executes when the expression is only true. 
+if condtion never and ever and ever and ever 
+executes on false expression, It don't even get in the if part. 
+
+if(mynameis == "Sachin"); //true
+{
+	System.out.println("Programming is fun");
+	System.out.println("Hii.., There!! My name is If statement and I am given true expression");
+
+}
+
+1. instead of checking condition again and again with if statement we have introduced further with
+else statement
+
+
+if(Expression){
+	/* if the expression is true
+	if block execute */
+}else{
+	}
+note: in else case we will not type any expression.
+but the else part will get executed if and if block is false..!!
+
+case : what if we have multiple conditions 
+
+num>0
+num<0
+========
+num%2==0
+num%2!=0
+==========
+1,2,4
+1<2
+2<4
+
+4>1
+4>2
+2>1
+===========
+
+if(<Expressions>){
+	/*statements withing if condition 
+	will get executed */
+}
+else if(<Expressions>){
+	/* if block is been false then
+	else if block will get executed  */
+}
+else{
+	/*this will get executed only when if 	condition and else if condition is not 	true*/
+}
+
+if(<true>){
+	if(<true>){
+
+		}
+
+}
+
+IF statement is always works on true
+scenario...!!!!
+
+----------------------------------------------
+Assignments
+1. Take three numbers from user and print the 
+greater number
+testdata:
+	input 1st number : 25
+	input 2nd number : 78
+	input 3rd number : 87
+Output: 
+	87
+2. Take a input from the user and check if its a leap year
+
+
+
+
+Switch case statement
+=====================
+Switch case statement is used when we have
+a number of options(or choices)
+and we may need to perform a different tast for 
+each choice. 
+
+Synatax:
+--------
+switch(defined variable or integer expression)
+{
+	case constant:
+	//Java Code
+	;
+	case constant:
+	//Java Code
+	;
+	case constant:
+	//Java Code
+	;
+	...
+	...
+	...
+	...
+	default:
+	//If any of the cases are not 
+	//falling true 
+	// then the default gets executed.
+}\
+
+
+JavaLoops
+=========
+1. For loop
+2. while loop
+	2.1) do while loop
+
+
+for loop:
+==========
+Syntax
+
+for(initialization/declare;conditon;increment/drecrement)
+{
+	//Java Code
+
+}
+
+step 1 ===> Initialization
+Step 2 ===> Condition
+step 3 ===> Falls into java code 
+step 4 ===> increment or increment
+
+looping we use for automation pupose
+it will shortens the line of code
+
+increases the complexity of code.
+
+start===>initialization====>contidition >> True/false
+if it is true it will update the itiration/counter
+while updating it will execute javacode. 
+if it is false for loop will get terminate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
