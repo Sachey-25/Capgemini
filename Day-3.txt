@@ -1,0 +1,186 @@
+While loop(<Expression>/<condtion>){
+
+	//update the counter
+	i++/i--
+	++i/--i
+
+}
+
+#program to display numbers from 1 to 5
+class main{
+	public static void main(String[] args){
+	
+	int i=1, n=5;
+
+	//while loop
+	while(i <= n ){
+	System.out.println(i);
+	//update the counter
+	i++;		
+	}	
+}
+output: 1 2 3 4 5
+
+===> do while loop
+---------------------
+do <--- executed, no matter what whether the condition is 
+a false || There's atleast one ouput!!!!
+
+Syntax:
+-------
+do{
+	//loop body
+
+}while(Expression/condition)
+
+1. The body of the loop is executed at first. then textExpression is evalutated.
+2. If the textExpression evaluated to true, the bofy of loop will get executed again over again over again over again.
+3 until and unless textExpression holds true.
+
+Note: In order to control the infinite loop we have two mechnisms and they are 
+1. break 2.continue
+
+Labels
+------
+L1, L2, L3,L4...........Ln
+
+
+1. JVM
+2. FirstProgram in Java
+3. Variables
+4. Datatypes
+5. Operators
+6. If elseif else
+7. Switch 
+8. For loop
+9. While loop
+10. do while loop
+11. Continue statement
+12. break statement
+=======================================================
+Core concepts :==> Collections, OOPS, ExceptionHandling
+
+in collections
+1. Arrays
+2. Linked list
+3. Vectors
+4. HashSet
+5.LinkedHashSet
+6.TreeSet
+7.TreeMap
+8.LinkedHashMap
+9.HashTable
+10.Iterators and ListIterators
+11.Comparable and Comparators
+12. Java functions
+=====================> 1. Strings, 2.Mutlithreading
+			3. Wrapper classes
+OOPs
+====
+1.Class and Objects
+2. Constructors
+3. Static Keyword
+4. Inheritance ==> Types of inheritance
+5.Aggregation and Association
+6.Super Keyword
+7. Method Overload and Override
+8. Polymorphism ----> Types of Polymorphism
+9. Static and dynamic binding
+10. Abstract class
+11. Abstract Methods
+12. Interface
+13. Abstract vs Interfaces
+14. Encapsulations
+15. Java Packages 
+16. Access modifiers
+17. Garbage Collections
+18. Final Keyword
+
+=============================================
+Java-Core
+---------
+>> Arrays are considerably said as arraylist
+these are belongs List interface and it is based on an array data structure.
+>> Arrays are most widely used beacuse of functionality
+and flexibility. 
+>> ArrayList are resizable-array implementation
+>> it implemetns all optional list operatios and permits all elements including null
+
+elements <=== 
+Array List <=== Dynamically frow and shrink
+---------------------------------------------------------
+
+1. How to create an ArrayList
+
+**Arrays**
+-----------
+>> Collection of same datatypes
+syntax:
+-------
+names="Sachin","Java","Programming","Capgemini"
+
+String[] names="Sachin","Java","Programming","Capgemini"
+
+here : String is the name of datatype
+[] : Memory allocation
+names:dataVariable
+
+>>> Most importantly, We use an array to store the data
+
+String names[]="Sachin","Java","Programming","Capgemini"
+
+String []names="Sachin","Java","Programming","Capgemini"
+--------------------------------------------------------
+
+String[4] names="Sachin","Java","Programming","Capgemini"
+
+
+String[4] <==== Fixed ==> New Data <==Not Possible 
+
+String [] <==== NonFixed ==> New Data <== Possible
+but do have an end??? <=====NO.... array overflow!!!
+
+
+
+=========================================================
+
+import java.util.Scanner;
+
+Scanner object=new Scanner(System.in);
+
+System.out.println("Enter the length of an array");
+array_length=object.nextInt();
+
+System.out.println("Enter a elements of an array");
+int[] result=new int[array_length];
+
+for(int i=0; i<array_length;i++){
+	result[i]=object.nextInt();
+}
+System.out.println(arrays.toString(result));
+============================================================
+
+
+codingmachine25@gmail.com
+before sunday EOD..!!
+
+LETS COMPLETE ASSIGNMENTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
