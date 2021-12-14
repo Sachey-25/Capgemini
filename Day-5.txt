@@ -1,0 +1,172 @@
+Methods/Functions
+-----------------
+---> A set of instructions which is responsible to perform specific task.
+
+System.out.println(""); #statement
+System.out.println(); #function
+
+int a=20;
+System.out.println("a"); #statement
+---> a
+System.out.println(a); #function
+---> 20
+
+2. Methods are one of the best approach to do the programming
+----> 1. User-defined methods
+----> 2. standard library methods --> Arrays.toString();
+arraycopy();
+next.Int();
+next.Double();
+
+
+------------------------------------------
+Declaring the methods in the Java
+
+>>>syntax:
+----------
+returnType <MethodName>(){
+	//Method body
+
+}
+returnType: It Specifies what type of value
+a method returns.
+for exmaple: if a method has an int return
+type then it returns an integer value
+
+int a=10;
+System.out.println(a)// ---> 10
+
+MethodName: Identifier that's used to refer to the particular method in a program. 
+
+int a = 10
+
+int <==== datatype <== Literals
+a <====== variable <== Naming convestion\	
+		<====== identifier
+10 <===== value 
+
+Example
+---------------
+int addNumbers (){
+	int a=10;
+	int b=20;
+	System.out.println(a+b);
+}
+
+Java Method implementation
+---------------------------
+modifier static returnType nameofMethod(p1,p2,p3,...pn){
+	//Method Body
+}
+
+>> Modifier - It defines access types whether the mehod 
+is public, private and so on.
+ 
+What are access specifiers?
+------------------------------
+>> used to set the accessiblity(visibility) of classes
+interfaces, variables, methods, construtors, datamembers
+and setter methods.
+
+--- public : this means it can be accessed by the other classes.
+--- private : this means it can not be accessed by the other 
+classes.
+
+-------------------------------------------------------------
+Lets do the methods
+
+1. Methods can be declared and initilizised out of the main function
+2. Methids needs to called within the mainfunction to run the program logic.
+
+
+1) if static present ----->  return keyword required.
+if static is not present ----> return keyword required.
+
+2) there are few certanities we use return keyword even though there's static also. 
+
+3) return is an object which stores an information, nevertheless it will not print anything untill its called/invoked.
+4) If you have any string as a return type ypu dont need to use return keyword.
+
+====> Use the JavaMehods and write a java program for basic calculator...!!!
+=============================================================
+
+Java Classes and objects
+-------------------------
+Class is the blueprint 
+Object is an entity of the blueprint
+
+An object is any entity that has a state and behavior
+Motor-Bike
+state: idle, firstgear, secondgear, thirdgear, etc...
+Behavior : accelarating, braking, constant speed
+
+JavaClass
+----------
+We can create a class in Java using keyword class.
+
+Syntax:
+========
+class<class_name>{
+//fields
+//methods
+}
+
+1. Class should created above the main function and below the actual class.
+
+
+Constructors
+----------------
+1. No-Arg Constructor ==> private and public
+2. Parametized Constructor===> (p1,p2,p3,p4)
+3. Default Constructor
+
+Java No-Arg Constructor
+--------------------------
+if a constructor doesnt accept any parameters, 
+it is known as a no-argument constructor
+
+private Constructor(){
+	//Body of the constructor
+}
+
+====================================================
+Java Strings
+--------------
+== String is a sequence of charecters.
+example
+----------
+S T R I N G ---> 0-----length
+String will be known on its index bases..!!!
+
+whenever we need to denote the string
+we have to use datatype String in java
+
+example
+String <String_name>= "<enclosed in double quotes>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

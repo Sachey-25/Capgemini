@@ -1,0 +1,138 @@
+Static class
+Static block
+Static methods
+Static variables
+-------------------------------
+Static keyword can be used with the class,variable,method and block. 
+
+Static memebers belong to class instead of a specific instance.
+
+this means if you make a member static, you can access it without 
+obeject..
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+OOPS concepts in JAVA
+----------------------
+1. What is object
+2. What is Class
+3. Constructors in Java
+4. Object oriented Programming feature
+	4.1)Abstraction
+	4.2)Encapsulation
+	4.3)Inheritance
+	4.4)Polymorphism
+5. Abstract class and methods
+6. Interfaces in Java
+
+
+>>> What is an object <----- An entity of the class (Element)
+>>> Instance of the class
+object:----> Is a bundle of data and its behavior(often known as methods)
+Objects have two charecteristics
+1. States 2.Behavior
+
+
+example:
+========> Home
+class : Home
+Objects_states : Address, Color, Area, Doors, Windows, Rooms[living room, Washroom, kitchen, Hall, carridor, Balcony]
+Objects_Behavior: Open door, Close door
+
+Example:
+=======
+Website:Class
+objects : buttons,links,colors,submit_forms
+behvior : request and response, server side rendering, listen at port, Search element
+
+Assignment:===================================================
+Perform the practices as on class, object and constructors   |
+by taking atleast 5 of examples.			     |
+at minimum 3 fields at each class 			     |
+==============================================================
+
+Assignment:========================================================
+Practice all the concepts delivered today in the session          |
+and make sure all the concept will applied on atleadt 3 different |
+Examples							  |
+===================================================================
+
+4.1)Abstraction
+----------------
+Java is an object oriented language 
+----> Abstraction is a peocess where you show only "relevant" data and 
+"hide" unnecessary details of an object from the user.
+
+Abstract class and abstract methods
+=====================================
+1. An abstract class is a class that is declared with an abstract keyword
+2. An abstract method is a method that is declared without immplemention
+3. An abstract class may or may not have all abstract methods.
+Some of them can be concrete methods.
+4. A method defined abstract must always be redefined in the subclass
+thus making overriding compulsory or either make the subclass itself.
+5. Any class that contains one or more abstract methods must als be declared with an abstract keyword
+6. There can be no object of an abstract class. that is, an abstract class can not directly instantiated with the new operator.
+7. An asbtract class can be have parameterized constructor and the default constructor is always present in an abstract class.
+
+Example:
+---------------------------------------------------
+class : Shape (Abstract Class)
+states
+---------
+1. area of circle
+2. area of rectangle
+---------------------------------------------------
+---> Circle 			--->Reactangle
+---->round			length
+----> radius			bredth
+---------------------------------------------------
+
+====> Abstraction is the process of hiding certain details and showing only essesntial information to the user.
+
+
+====> How to create abstract class
+====> Keyword ==> abstract ===> make sure we will create this class above
+the main class
+=====> We need to create a method which can accessed with the abstract objects  -----> to making sure the abstract methods holds the data.
+======> Every abstract class must have subclass of it.
+--------------------------------------------------------------------------
+abstract class <====== subclass 
+---> for hiding the data 
+---> Only if that data triggered then the data should be shown..!!!
+
+1. Are we got to know how to create abstract class?
+2. Are we got to know how to create abstract method?
+3. Are we got to know how to create abstract subcalss?
+4. Are we got to know how to create object reference to the subclass??
+
+***** Are we got to know that why do we do all above the above?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
