@@ -1,0 +1,187 @@
+OOP concept
+==========
+Inheritance:
+------------
+The aim of inheritance is to provide the reusability
+of code so that a class has to write only the unique features and rest of the common properties and functionalities can be extended to another class.
+
+(base class)
+class something{
+	Properties of class something
+	...
+	...
+	...
+}
+(child class)
+class anything extends something{
+	Properties of class something extended to
+	the properties of class anything
+	...
+	...
+	...
+}
+----> Occupying the data information from the base class (anything) but if any other class utilizing and of the data from that particular class it becomes base class
+
+
+child class:
+-----------
+>> The class that extends features of another class
+is known as child class., subclass or derived class.
+
+Parent class:
+--------------
+>> The class whose properties and functionalities are used by another class is known as parent class, super class or base class.
+
+Inheritance is a process of defining a new class based on an existing class by extending its common data members and methods.
+
+Inheritance allows us to resuse the code, it improves reuasability in java applicaiton.
+
+biggest advantange of the inheritance is that the code that is already present in base class need not to be written in the derived class.
+
+Syntax:
+----------
+//Base class
+class ABC{
+	..
+	..
+}
+//derived class
+class XYZ extends ABC{
+	...
+	...
+	...
+}
+
+
+class :Computer mouse
+states: buttons --> scrolling button
+behavior: leftclick, right click, scroll
+
+inheritance
+------------
+interacting from one class to another class
+
+Type of inheritance
+----------------------
+1. single inheritance       A <----------- B
+2. Multilevel inheritance   A <-----B<-----C
+3. Hierarchical Inheritance A<---B A<----C A<---D
+4. Multiple inheritance     C<----A C<----B
+5. Hydrid inheritance.      A&B<-----C
+
+	    C
+	    |
+	---------
+	|      |
+	A      B
+	|      |
+	D      F
+	|
+	E
+-------> We have implement two types of inheritance.
+
+
+	   ---<--A---->--
+          |		 |
+	  B		 C
+          ^              ^ <---- Multiple inheritance [Java doesn't 							support]
+	  |              |
+          -------D--------
+
+------------------------------------------------------
+
+
+Class A and B extends C ----> Hirerachical Inheritance
+Class D extends A -----> Single inheritance
+Class E extends D -----> Single inheritance
+
+	  ------A---------
+          ^		 ^
+          |		 |
+	  B		 C  <----- Hybrid Inheritance
+          ^              ^
+	  |              |
+          -------D--------
+
+---------------------------------------------------------------------
+>>> aggregations in java
+--> Agrregations is a special form of association. It is a relationship
+between two classes like Association.
+However, Its a directional association. which means it is strictly a one way association. It represents a HAS-A relaionship.
+
+-----> we need two clases
+-----> Parameterized constructors
+
+Why?
+----> To maintain code reusability.
+
+College ----> Staff
+<class>      <class>
+
+Student Has-A Adrress (Has-a relationship between student and address)
+College Has-A Address (Has-a relationship between college and address)
+
+
+====> Assignement:=====================================================
+1.Program for staff and college using aggregations			|
+class staff ----> states 						|
+class college ---> states ----> applied by aggreation			|
+									|
+2.further more add these two classes and run appropriate Has-A		|
+with student and address class.						|
+class staff ----> states 						|
+class college ---> states ----> applied by aggreation			|
+class address								|	
+class student ----------------> run a aggregation as java application..!|
+=========================================================================
+
+>> Code Quality
+---------------
+1. variables must should complete word 
+no number along are appreciated
+----> variable must be in lowercase
+2. maintain appropriate tab spaces (indentation)
+3. maintain appropriate comments
+4. Not unneccessary loop usage
+5. follow the rules and regulations of coding mechanism of java
+6. avoid duplicates 
+7. Class name and method name should be starting with only first letter uppercase and lower case respectively.
+
+--------------------------------*****************----------------------
+Association
+----------->
+Association establises relationship between two separate classes
+through their classes and objects. 
+The relationship can be one to one, one to many, Many to one 
+many to many.
+
+object ===> object
+object ===> Many object
+Many objects ===> Object
+Many objects ===> Many objects
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+A  <== B
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
