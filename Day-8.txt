@@ -1,0 +1,108 @@
+Super keyword
+--------------
+The super keyword referes to objects of 
+immediate parent class
+
+Uses:
+=====
+Using super method accessed the parent data member
+1. To access the data memebers of parent class when bothe parent and child class have memeber with the same.
+
+Using super method access the parent class via constructor
+2. To explicitly call the non-arg |<parameter> and parameterized constructor of parent class
+
+constructor(){
+
+}
+
+
+constructor(String Name, int age){
+
+}
+Super()//Super method
+
+
+
+3. To access the method of parent class when child class has overridden method.
+
+Note:==> Without super keywod use
+later It with super keyword.
+
+Without super keyword.
+2 classes
+1. parentclass
+2. subclass
+
+subclass extended to parent class.
+I will try to access the data 
+present in th subcalss
+===> I will end with value present in the
+subclass.
+
+Note:
+--------
+The moment when we call no-arg constructor as well as parameterized constructor
+even in the subclass and object created for the same also, by default super() is invoked/called.
+
+Hence the output always gets into parent class in the first and the later execution takes place.
+
+parent
+child
+method
+-----------> first constructor
+parent
+child
+method 
+-----------> Seocond constructor
+
+
+3. How to use super keyword in case of method.
+-----> When a child class declares a same method which is already present in the
+parent class then this is called Method "Overridding"
+
+
+====> When a child class overrides a method of a parent class, them the call to the method from child class object always call the child class version of the method. However by using super keyword.
+
+Method Overloading
+===================
+>> Is a feature that allows a class to have more than one
+method having same method name.if their argument(parameter) lists are different.
+
+
+parent class
+void print(int number_one){
+
+}
+
+
+subcalss
+void print(int number_two){
+
+}
+========> Overload
+
+=============================================================================
+
+
+>>Runtime Polymorphism
+-----> Method overriding and dynamic method dispatch <----- Runtime Poly
+when a parent class references to the child class object
+then the call to the overridden method is determined at runtime. >>>> Runtime Polymorphism.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
