@@ -1,0 +1,246 @@
+Polymorphism in Java
+---------------------
+-- Polymorphism is one of the oops concept
+that allows us to perform a single action in different ways.
+
+--Class:Car
+
+--States:-colors,model,name,id,age,
+
+--Behaviors:- speed, brake, drift
+
+2. Class:Animal
+--state:name,height,wieght
+--behavior:sound
+
+=====================================
+class : Car
+subclasses : Engine, Design
+
+Apply : implement these behavior
+
+1. body
+2. sterring
+3. airbag
+4. performance
+5. Economy.
+=======================================
+>>> Static and dynamic binding in Java
+
+Association of method call to the method body is called as binding.
+
+public void add(){
+	System.out.println();
+	System.out.println();
+	System.out.println();
+	System.out.println();
+	System.out.println();
+}
+
+//Invoke method // call the method
+add(); ----> Binding..!
+there are two types
+1. Static Binding ----> No Object
+2. Dynamic Binding ---> 
+
+static biding happens at compile time.<--Overload
+dynamic binding happens at runtime.<---Override
+
+What is reference and object..!
+>>> Inheritance and polymorphism
+[extends]------[method overload/override]
+
+Static Binding 
+----------------
+We have two class Human and Boy
+Both classes have same method
+but the method is static. 
+>>> if its a static
+1. we can't override <--- Subclass object needed.
+subclass <--- We need to call parent class.
+
+Note:
+======
+Whenever a binding of static, private and final
+methods happend, type of the class determined by
+the compiler at compile time and the binding (Calling a method to its method body) happens then and there
+
+>>> We had created a static method
+next is call the method body <== Binding..!
+
+2. Dynamic Binding or LateBinding
+----------------------------------
+When compiler is not able to resolve the call/binding at compile time, Such bindign is known as Dynamic or late Binding.
+
+Method Overriding is a perfect example of dynamic binding as overriding both parent and child classes.
+
+
+****IN static ****
+Class -----> Object
+subclass object to object
+ParentClass object to object
+
+but 
+we can't do
+parent to subclass #in order to do this override
+
+override method is not possible in static binding
+
+however in dynamic binding is possible.
+===================================================
+
+>>> Interface 
+--------------
+-----> Abstract class is used for achieving partial abstraction. Unlike abstract class an interface used for full abstraction (relatives and hiding).
+
+Abstraction is a process where you only "Relevant" data and "hide" unnecessary details of an object from the user.
+
+What is an interface in java?
+----> Interface look like a class but it is not a class, An interface can have methods and varibales just like class but the methods declared in interface are defualt abstract 
+
+----> also the variables declared in an interface are public, static and final by default.
+
+Syntax:
+========
+abstract keyword ==> Abstract class
+class <class_name>
+keyowrd : interface <interface_name>
+
+interface MyInterface{
+
+	/ *Interface body 
+
+	Methods:
+	public void method1();
+	public static void method(); */
+
+}
+Note:----> 
+
+Interface ----> implement the interface as like inheritance I need to use the keyword
+ 
+"implements"
+
+Example:->
+----------
+interface myInterface{
+
+/* .....
+   .....
+   .....
+*/
+
+}
+
+>> In order to apply the properties of myInterface
+class <class_name> implements myInterface
+{
+
+/* .....
+   .....
+   .....
+*/
+	
+}
+
+2) Interface and inheritance
+-----------------------------
+class <Childclass_name> extends <parent_class>
+
+
+class >Class_name> implements <Interface_name>
+
+class demo extends <interfce_name>
+
+class demo implements interface
+
+Note: In order to apply the inheritance on interface we need to inherit first and then implement interface. and inheritance would be in interface class.
+------------------------------------------------
+
+Interface vs abstract classes
+================================
+
+Abstract Class          			          interfaces
+
+1. An abstract class can extend only one	1. An interface can extend any number
+class or one abstract class at a time 			of interfaces at time.
+2. Abstract class can extend 			2. An interface can only extend
+another regular class or abstract class 		another interface
+3. An Abstract class can have both		3,. An interface can have only 
+abstract and concrete methods			abstract methods
+4. In abstract class keyword "abstract"		4. In an interface keyword "abstract"
+is mandatory to declare a method as		is optional to declare a method as 
+an abstract					abstract
+5. An abstract class can have protected and 	5. An interface can have only have 
+public abstract methods				have public abstract methods
+6. Static final variable with any		6. Interface can only have public 
+access specifier				static final variable.
+
+difference no.1
+---------------
+>>> Abstract class can extend only one class or one abstract class at a time.
+
+class Example{
+	//method
+	public void display(){
+	System.out.println("Display1 method");
+	}
+}
+abstract class Exampl{
+	//Method
+	public void display_2(){
+	System.out.println("Display2 method")
+	}
+}
+abstract class Examp extends Exampl{
+	//Method
+	abstract void display_3(){
+	System.out.println("Display3 method")
+	}
+}
+abstract class Exam extends Examp{
+	//Method
+	abstract void display_3(){
+	System.out.println("Display3 method")
+	}
+}
+
+===> Abstract can exetend only one class or only one abstract class.
+
+
+interface?
+How many times? ----> multiple number
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
