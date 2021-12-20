@@ -1,0 +1,225 @@
+-Encapsulation
+---------------
+---
+> The encapsualtion is to hide the implementation
+detials from users.
+if a datamember is private it means it can only be accessed within the same class. 
+>> However we can setup public getter and setter
+methods to update. 
+
+<> int getName();
+<> String firstName();
+<> String lastName();
+
+void setlastName(string lasName)
+
+void setfirstName(String firstname)
+
+void setgetName(int getName) ====> DataHinding
+--> hiding the implementation from the user..!!
+
+>>>> How to implement in java
+
+1. Make the instance variables private so that they cannot be accessed directly from outside the class
+
+class Example{
+	String name = "Sachin";
+Main(Strings args[]){
+	Example obj = new Example();
+	System.out.println(obj.name); ??Sachin ?
+I will say, I will get an Output on the screen as Sachin... agree? disagree?
+Why?
+}
+
+
+>>> How this can be made of encapsulation
+--------------------------------------------
+class Example{
+	private String name = "Sachin";
+
+}
+class example{
+Main(String args[]){
+	Example object = new Example();
+	Syso(object.name); 
+
+//This can't give any output. <== Encapslation.!!
+}
+-------------------------------------------------
+>>> Access specifiers // Access Modifiers
+---->4 different types
+1)default
+2)private
+3)public
+4)protected
+
+1. default:---> When we do not mention any access modifiers. The scope of this modifier is limited to the package only. 
+This means that if we have a class with the default access modifiers in a package. 
+only those classes that are in the package can access to the class.
+
+Note: If we have default method or data members in a class, It would be not visible in the class of another package. 
+
+package abcpackgae
+
+public class Additon{
+	/*since we didn't mention any access 	modifier here, it would be considered as a 	default. */
+	
+	int addTwoNumbers(int num1, int num2){
+	return num1+num2;
+}
+}
+public, protected, private...!!!!
+----------------******************-----------
+final Keyword, final variable, final method
+
+final variables:
+------------------
+>>> final variable are nothing but contstants.
+constants <---- Whose values are not changable.
+
+class demo{
+
+final int value=99;
+void method(){
+	value=101;
+}
+Main(String args[]){
+	demo obj = new demo();
+	obj.method();  >>> 101 ? agree not agree!!!
+}
+
+2. Final Method
+---------------
+A final method cannot be overridden.
+Which means even though a subclass can call the 
+final method of parent class without any issues but it cannot override.
+
+3. Final Class
+---------------
+>>> We cannnot extend the final class
+
+final
+-----
+1. A constructor cannot be declared as final
+2. Local final variable must be initializing during declaration.
+3. All variables declared in an interface are by default final.
+interface example{
+<<<<<<<Varibales>>>>>>> //By default final
+}
+4. We cannot change the vlaue of a final variable.
+5. A final method cannot be override
+6. A final class cannnot be inherited
+7. if method parameters are declated final then the values of these parameters cannot be changed.
+8. It is good pratice to name final variables in all CAPS
+9. final, finally are finalize are three different terms. Finally used in exception Handling. 
+and finalise is a method is called by JVM during 
+garbage collection.
+
+-------------------*********----------------------
+Collections in Java
+-------------------
+1. Java ArrayList
+--------------------
+>> collection od same datatypes
+>> Since array's are all fixed length
+we have came across with ArrayList
+>> Dynamically grow and shrink
+grow === Increase
+shrink ==== Decrease
+
+int[4] array ={1,2,3,4}; ArrayList
+
+index===> Position 
+value===> data
+array or arraylist <==== They single line strip
+
+>> how to impletement 
+
+Syntax:
+------
+ArrayListName<int> object = new ArrayListName<int/String> ();
+or
+ArrayListName<String> object = new ArrayListName<int/String> ();
+
+Note: In order to use the array's in practice
+
+we need to import the package : java.util.*;
+
+Example1:
+========
+Create an array which is going to be array of names.
+
+>>> We need to focus main method itslef.
+
+-------------------------**********************-------------------------
+Assignment===============================================
+Using a loop can we add elements to the arrayList?      ||
+=========================================================
+------------------------------------------------------------------------
+
+Sorting the arraylist of object using comparable and comparator
+
+====> Collections.sort()
+====> Collections,<Initialized array.reverOrder())
+
+Class Student
+==============
+
+Why do we need comparable operator==>
+---------------------------------------
+sort method will work for only homogeneous elements
+Interger Arraylist<10,20,30,"String">
+
+Sort 
+-----
+Reason: I just called the sort method on arralyList of objects
+which is actually doesn't work unless we use interface
+like comparable.
+
+Technically
+
+JVM :
+BoundMismatch: The generic method(list) of type collections is not 
+applicable the arguments of arraylist.
+
+In order to avoid BoundMismatch error, we need to make use of 
+interface >>> Comparable.!
+This comaparable is shouble ready enough to override.
+inheritance.!! and interface????
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
