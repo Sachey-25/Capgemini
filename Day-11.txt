@@ -1,0 +1,66 @@
+LinkedList
+-----------
+1) size of the array is fixed
+2) Array elements need contiguos memory location to store their values
+3) Inserting an elements in an array is performance wise expensive.
+4) Same way with deleting the elements in the arrays
+
+in order to come over of the disadvantages
+Linkind list are introduced.
+1) Linked link allows dynamic memory allocation
+2) Don't need contiguos memory allocation
+3) Insertion and deletion would be easy
+
+HashMap
+------
+>> A Map based collection class that is used for storing Key & value pair.
+key <--- (Integer,String)
+value <--- (String,Integer)
+
+it denoted as HashMap<key, value> or HashMap<K,V>
+This class makes no guarantees as to the order of the map.
+>> It is similar to unsynchronzed and permits null value.
+
+-------------------------------------*********************------------------------
+
+Java Enum 
+----------
+An Enum is a special datatype which is basically a collection(set) of constants.
+
+public enum Directions{
+	EAST,
+	WEST,
+	NORTH,
+	SOUTH
+}
+
+Note: best practice on final and enum by taking the variable in uppercases.
+
+>>> How to assign the value to enum,
+
+<Class_name> anyVariable name = <Class Name>.<Defined variables>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
