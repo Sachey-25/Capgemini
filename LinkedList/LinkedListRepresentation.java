@@ -4,11 +4,12 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListRepresentation {
-	public static void main(String[] args) {		
+	public static void main(String[] args) {
+		
 		//Creating a linked list
 		LinkedList<String> list = new LinkedList<String>();
-		list.add("Bangalore");
-		list.add("Mumbai");
+		list.add("Bangalore"); //Position free however it will adds the elements
+		list.add("Mumbai");// at the end of the element
 		list.add("Hydrabad");
 		list.add("Chennai");
 		System.out.println("Elements of the list is : " + list);
