@@ -1,0 +1,68 @@
+Java8 Features
+===============
+1. Lambda Expression
+2. Method reference 
+3. Functional Interfaces
+	3.1) Default
+	3.2) static methods
+4. Streams
+5. Stream filters
+6. ForEach()
+7. Collectors 
+8. String Joiners
+9. Optinal Classes and Arrays parrel sort
+=======================================================================
+
+>>> Lambda Expression
+A lambda expression is an anonymous function. A function doesn't have
+a name and doesn't belong to any class.
+
+Lambda Expression syntax
+--------------------------
+To create a lambda expression, we specify input parameters
+on the left side of the lambda operator
+Arrow symbol "->" and place expression(Condition) or block of lambda expression
+(x,y)->x+y ===> Lambda expression takes two parameter/argumnets x and y returns
+of sum of these.
+
+Syntax:
+----------
+(Parameter_list) -> {Function_body}
+
+Lambda Expression vs methods in java
+We need to know
+1. Name
+2. parameters list
+3. Body
+4. return type
+
+public int method(para1,para2,para3,....paraN){
+	//Method Body..
+	return 0;
+}
+>>> Lambda expression
+1. A lambda expression only has body and parameter list.
+1. No name of the method
+2. No return type
+3. Body
+4. Parameter list
+
+
+>>> Where can we use lambda
+-----> only single abstract method ---> is called functional interface.
+
+------> Single behavior of the method : runnable, calculate, sleep, walk
+
+
+>>> Lambda expression are valid with interfaces but not with the class...!!!
+
+General method
+class Yes/No  <---- Method.....
+
+Interface <----- Method <--- initialoizating...!!!
+
+
+>>> Lambda Parameter are valid within its scope 
+
+
+
