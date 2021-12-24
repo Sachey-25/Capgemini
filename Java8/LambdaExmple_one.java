@@ -4,12 +4,10 @@ package Java8;
 interface lamb{
 	public int single(int a);
 }
-
 interface Name{
 	//Function without parameter
 	public String SayHello();
 }
-
 public class LambdaExmple_one {	
 	public static void main(String[] args) {
 		lamb object= (Sachin) -> Sachin+5;
