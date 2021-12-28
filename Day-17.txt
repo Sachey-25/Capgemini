@@ -1,0 +1,90 @@
+JDBC
+----
+JDBC ---> Java Database Connectivity.. is a specification from sun microsystems
+that provides a standard abstraction(that is API or Protocol) for java application
+to communicate with various databases.
+
+>> It provides the language with java database connectivity standard. It is used to write programs required to access databases.
+
+>> JDBC along with the database driver is capable of accessing databases and speadsheets.the enterprise data stored in a relational database(RDB)can be accessed with the help of JDBC API's
+
+Definitions 
+-----------
+Jdbc is an API(Application programming interface) which is used in Java to interact with databases.
+
+>> The classes and interfaces of JDBC allows application to send request made by the users to specified database.
+
+
+
+Components of JDBC
+---------------------
+1. Jdbc API :----> WORA (Write once run everywhere)
+
+Packages : java.sql.*;
+	: Javax.sql.*;
+2. Jdbc driver manager:---> It loads database-specific driver in an application to establish connection with a database. it is used to make a database. or database-specific call to the database process the user request.
+3. jdbc test suite:---> for the operation such as insertion, deletion, updation these things will be performed by the JDBC driver.
+4. Jdbc-odbc
+---------------
+>>>> sun.jdbc.odbc
+
+>> Eclipse (Java Application ) ---> program to connect jdbc --> execute the query..!!
+
+
+>>> JPA | Hibernet <----- Database !!
+--------------------------------------------------------
+Java Programmming connecting to database(PostGreSql)
+ORM Model <== Object-relational mapping or ORM is the programming technique to map application domain
+model objects to relational databases tables.
+(https: webdomain)
+(database : datadomain) ===> PostGreSql <=== pgadmin <=== localhost:<port> : 4digit numbers
+>> Hibernate is java based ORM tool that provides framework for mapping application domain objects to the 
+relational database tables and vice versa.
+postgresql://localhost/Practice
+ 
+
+Anything which tries to connect the server(request, response) via your laptop <---- localhost 
+localhost:5432
+
+JPA 
+-----
+The JPA is Java Persitence API(JPA) is the java standard for mapping java objects to a relational database
+JPA is a specificaton and several implementations are avaiable, Popular implementation is HIBERNET,
+EclipseLink and Apache OpenJPA.
+
+===> JPA Specifications are defined with annotations in a javax.persistence package. 
+Using JPA annotations helps us in writing implementation independent code.
+ 
+
+Hibernate Components
+--------------------
+1. Configuration
+2. Session Factory
+3. Session <---- Server <--- Request and response
+4. Transaction <---- Communicaton <---- between java class and database table
+5. Query 
+6. First Level Cache <---Java Class || 
+7. Persistent objects
+8. Second level Cache<--- Database 
+
+
+>>>> In order to develop JPA|Hebernate project we need tools as
+1. Hibernate 5+
+2. IDE Eclipse
+3. Maven
+4. JavaSE 
+5. Sql > PostGre > Mysql
+
+Development steps
+==================
+1. Create a simple maven project
+2. Project directory structure
+3. Add Jar dependencies pom.xml
+4. Creating the JPA entity class
+5. Create a Hibernate configuration file
+
+
+
+
+
+
