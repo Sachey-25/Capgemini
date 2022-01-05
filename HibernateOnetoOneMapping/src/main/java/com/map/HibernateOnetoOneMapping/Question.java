@@ -1,10 +1,13 @@
 package com.map.HibernateOnetoOneMapping;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+
+import javax.persistence.OneToMany;
+
 
 @Entity
 public class Question {
@@ -12,9 +15,13 @@ public class Question {
 	@Column(name="question_id")
 	private int questionId;
 	private String questionName;
-	@OneToOne
-	@JoinColumn(name="ans_id")
-	private Answer answer;
+	
+		
+	//Create a list which consists of multiple data.
+	@OneToMany(mappedBy="question")
+	private List<Answer> answers;
+
+	//Getter and setter methods for quetionID and questionName
 	public int getQuestionId() {
 		return questionId;
 	}
@@ -27,20 +34,20 @@ public class Question {
 	public void setQuestionName(String questionName) {
 		this.questionName = questionName;
 	}
-	public Answer getAnswer() {
-		return answer;
+	//Getter and Setter methods for Answer List
+	public List<Answer> getAnswers() {
+		return answers;
 	}
-	public void setAnswer(Answer answer) {
-		this.answer = answer;
-	}
-	public Question(int questionId, String questionName, Answer answer) {
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
+	}	
+	public Question(int questionId, String questionName, List<Answer> answers) {
 		super();
 		this.questionId = questionId;
 		this.questionName = questionName;
-		this.answer = answer;
+		this.answers = answers;
 	}
 	public Question() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 }
