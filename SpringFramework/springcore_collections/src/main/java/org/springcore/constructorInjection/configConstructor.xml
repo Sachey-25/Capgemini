@@ -3,18 +3,19 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:context="http://www.springframework.org/schema/bcontext"
  xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:c="http://www.springframework.org/schema/c"
  xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
  
-<!-- First Bean -->
-<bean class = "org.Springcore.springcore.Student" name = "student" 
- 	p:studentId="1234" p:studentName="Sachin" p:studentAddress="Bangalore" /> 
-
-	 
-<!--  Second Bean -->
- <bean class = "org.Springcore.springcore.Student" name = "stud" 
- p:studentId="4321" p:studentName="Ram" p:studentAdress="Mumbai" />
- 
+	<bean class="org.springcore.constructorInjection.Certi" name="cer" 
+		c:name="Python Programming language">
+	</bean>
+	<bean class="org.springcore.constructorInjection.Person" name="person">
+		<constructor-arg value="Sachin" />
+		<constructor-arg value="12"  />
+		<!-- Reference inject to the constructor -->
+		<constructor-arg ref="cer"/>
+	</bean>
 </beans>

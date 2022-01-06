@@ -8,13 +8,10 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
  
-<!-- First Bean -->
-<bean class = "org.Springcore.springcore.Student" name = "student" 
- 	p:studentId="1234" p:studentName="Sachin" p:studentAddress="Bangalore" /> 
+	<bean class="org.springcore.lifecycle.Samosa" name = "samosa"
+		init-method="hey" destroy-method="destroy" >
+	<property name="price" value = "10"  />
+	
+	</bean>
 
-	 
-<!--  Second Bean -->
- <bean class = "org.Springcore.springcore.Student" name = "stud" 
- p:studentId="4321" p:studentName="Ram" p:studentAdress="Mumbai" />
- 
 </beans>
