@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text form control</title>
+    </head>
+    <body>
+        <!---sign up form-->
+        <form style="text-align: center;">
+            Sign up form <br />
+            First name:<input type = "text" name="first_name" /> <br />
+            Last name :<input type = "text" name="last_name" /> <br />
+            Email ID  :<input type = "text" name="email" /> <br />
+            City      :<input type = "text" name="city" /> <br />
+            State     :<input type = "text" name="state" /> <br />
+            <br />
+            Description: <br />
+            <textarea rows="5" cols="50" name ="description">
+                Tell something about you.!
+            </textarea>
+            <button type="button">submit</button>
+        </form>
+        <form style="text-align:center">
+        Username : <input type="text" name="user_name" /> <br />
+        Password : <input type="password" name="password" /> <br />
+        </form>
+        <!---radio button-->
+        <form>
+            <input type="radio" name="subject" value="English">English
+            <input type="radio" name="subject" value="Maths">Maths
+            <input type="radio" name="subject" value="Science">Science
+            <input type="radio" name="subject" value="Physics">Physics
+        </form>
+        <form>
+            <input type="checkbox" name="subject" value="on">English
+            <input type="checkbox" name="subject" value="on">Maths
+            <input type="checkbox" name="subject" value="on">Science
+            <input type="checkbox" name="subject" value="on">Physics
+        </form> 
+        <br/>
+        <form> Subject list
+            <select name="dropdown">
+               
+                <option value="Maths" selected >Maths</option>
+                <option value="Physics" selected >Physics</option>
+                <option value="Chemistry" selected >Chemistry</option>
+                <option value="Biology" selected >Biology</option>
+                <option value="English" selected >English</option>               
+            </select>
+        </form>
+        <!--Upload a file to the server-->
+        <form>
+            <input type="file" name="fileupload" />
+            <button type="button" onclick="alert('file successfully uploaded')">submit</button>
+            <br />
+            <input type="file" name="fileupload" accept="image/*" />
+            <input type="button" name="ok" value="OK" />
+            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" />
+        </form>
+        <!--Html animation-->
+        <marquee> My name is sachin </marquee>
+        <marquee width="50%"> My name is Sachin Again </marquee>
+        <marquee direction="right"> My name is Sachin again over again </marquee>
+        <marquee direction="up"> My name is Sachin again over again </marquee>
+        <marquee direction="down"> My name is Sachin again over again </marquee>
+    </body>
+</html>
