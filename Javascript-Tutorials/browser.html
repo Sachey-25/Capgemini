@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Browser</title>
+    </head>
+    <body>
+        <h2 id="add"></h2>
+
+        <form name="test" onsubmit="validateage()" method="post">
+            <input type="text" name="age">
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function validateage(){
+                let validate=document.forms["test"]["age"].value
+                if(validate == ""){
+                    alert("Age must be filled out")
+                    return false;
+                }
+                else if(validate != "")
+                alert
+            }
+            let number_one=100;
+            let number_two=20;
+            let result=number_one+number_two;
+            document.getElementById("add").innerHTML="Additon of 100 and 20: " + result;
+            document.write("Addition of 100 and 20 is :" + result)
+            //---------------------------------------------------//
+
+            let number=prompt("Enter a number")
+            if(number>0){
+                console.log("The number is positive");
+            }
+            else if(number==0){
+                console.log("Its a ZERO")
+            }
+            else{
+                console.log("The number is negative")
+            }
+            console.log(number);
+        </script>
+    </body>
+</html>

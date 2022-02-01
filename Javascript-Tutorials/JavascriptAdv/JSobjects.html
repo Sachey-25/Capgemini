@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Objects</title>
+</head>
+
+<body>
+    <h2> JavaScript Objects </h2>
+    <p id="demo"></p>
+    <p id="object"></p>
+    <p id="objec"></p>
+    <p id="obje"></p>
+    <h2 id="work"></h2>
+    <h3 id="const"></h3>
+    <script>
+        //Whenever we deal with arrays or object the preffered return dattaype be const.
+        const Company={
+            firstname:'Wipro',
+            lastname:'Technologies',
+            location:'Bangalore',
+            pin:560043
+        }
+        document.getElementById("demo").innerHTML=Company.firstname;
+        document.getElementById("object").innerHTML=Company.lastname;
+        document.getElementById("objec").innerHTML=Company.location;
+        document.getElementById("obje").innerHTML=Company.pin;
+        document.getElementById("work").innerHTML=
+        "I work in "+ Company.firstname + Company.lastname;
+    </script>
+    <script>
+        //JavaScript Constructor Function
+        function person(){
+            this.name="Sachin",
+            this.age=28
+        }
+        //Create an object 
+        const object = new person();
+        //Print the information further
+        document.getElementById("const").innerHTML=object.name + " Is " + 
+        object.age + "Years old.";
+    </script>
+    <script>
+        //Contructors function with parameters
+        function employee(empid,fname,lname,empgen){
+            //assigning the parameter values to the calling object
+            this.id=empid,
+            this.fname=fname,
+            this.lname=lname,
+            this.gender=empgen,
+            this.greet=function(){
+                return('Hi' + " " + this.name);
+            }
+        }
+        //We need to create the objects
+        const emp = new employee(101,'Sachin','A','male');
+       // const empl = new employee(102,'Tony','Starck','male');
+        //Accessing the properties
+        console.log(emp.id)
+        console.log(emp.fname)
+        console.log(emp.lname)
+        console.log(emp.gender)
+    </script>
+    <script>
+        //Contructors function with parameters
+        function employee_one(empid,fname,lname,empgen){
+            //assigning the parameter values to the calling object
+            this.id=101,
+            this.fname="Tony",
+            this.lname="Starck"
+          
+        }
+        //We need to create the objects
+        const empl=new employee_one();
+        // const empl = new employee(102,'Tony','Starck','male');
+        //Adding the new properties
+        empl.gender='Male';
+            //Accessing the properties
+            console.log(empl.id)
+            console.log(empl.fname)
+            console.log(empl.lname)
+            console.log(empl.gender)
+    </script>
+     <script>
+        //Contructors function with parameters
+        function employee_one(empid,fname,lname,empgen){
+            //assigning the parameter values to the calling object
+            this.id=104          
+        }
+        //We need to create the objects
+        const emply=new employee_one();
+        // const empl = new employee(102,'Tony','Starck','male');
+        //Adding the new properties
+        emply.gender='Male';
+        emply.fname='Sourav'
+        emply.lname='Ganguly'
+            //Accessing the properties
+            console.log(emply.id)
+            console.log(emply.fname)
+            console.log(emply.lname)
+            console.log(emply.gender)
+    </script>
+    <script>
+        const cars={
+            //data property
+            carname:'Hyundai Creta',
+            //Accessor property (getter)
+            get getname(){
+                return this.carname
+            },
+            set changeName(newcar){
+                this.carname=newcar;
+            }            
+        }
+        //Accessging data property
+        console.log(cars.carname)
+        //Accessing gettermethods
+        console.log(cars.getname)
+        //change(setter method) object property using setter
+        cars.changeName='Brezza';
+        //Accessing the data property from setter method
+        console.log(cars.carname)
+    </script>
+    <script>
+        //Good programming practice
+        const mobile={
+            mobile_one:'OnePlus',
+            mobile_two:'iPhone',
+            mobile_three:'MI'
+        }
+            //Getter method
+            // another approach - using Object.defineProperty
+            Object.defineProperty(mobile, 'getName',{
+                get:function(){
+                    return this.mobile_one;
+
+                }
+            })
+            //Setting property
+          Object.defineProperty(mobile,'changeName',{
+              set:function(value){
+                   this.mobile_one=value
+                   this.mobile_two=value
+                   this.mobile_three=value
+                }
+            })
+            //Accessing the data
+            console.log(mobile.mobile_one);
+            console.log(mobile.mobile_two);
+            console.log(mobile.mobile_three);
+            console.log("After implementing setter method the values are changed")
+            mobile.changeName='NOKIA'
+            console.log(mobile.mobile_one);
+            mobile.changeName='SONYEricssion'
+            console.log(mobile.mobile_two);
+            mobile.changeName='Blackberry'
+            console.log(mobile.mobile_three);
+            console.log("Elements of Mobile object after appling getter and setter")
+            console.log(mobile)
+    </script>
+
+</body>
+</html>
