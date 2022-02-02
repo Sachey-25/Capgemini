@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Methods</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <h2 id="music"></h2>
+        <p id="veg"></p>
+        <script>
+            const musicInst= [ 'piano','guitar','violen','drums','flute' ]
+            document.getElementById("demo").innerHTML=musicInst;
+            document.getElementById("music").innerHTML=musicInst.toString();
+            //Join : The join() jpins the array element into a string.
+            document.getElementById("demo").innerHTML=musicInst.join("*");
+            document.getElementById("music").innerHTML=musicInst.join(" ");
+            //The pop() : remove any element from the array
+            document.getElementById("demo").innerHTML=musicInst.pop();
+            document.getElementById("demo").innerHTML=musicInst;
+            document.getElementById("demo").innerHTML=musicInst.pop();
+            document.getElementById("demo").innerHTML=musicInst;
+            document.getElementById("demo").innerHTML=musicInst.push("flute");
+            document.getElementById("demo").innerHTML=musicInst;
+            document.getElementById("demo").innerHTML=musicInst.push("drums");
+            document.getElementById("demo").innerHTML=musicInst;
+        </script>
+        <script>
+             const musicInst= [ 'piano','guitar','violen','drums','flute' ]
+          
+             document.getElementById("demo").innerHTML=musicInst;
+            //shift(): Removes the first element of an array and shifts the other elements to
+            //the left
+             document.getElementById("demo1").innerHTML=musicInst.shift();
+             document.getElementById("demo1").innerHTML=musicInst.unshift();
+        </script>
+        <script>
+            //concat, indexof, 
+            let dispaly= [ 'MouthOrgan' ]
+            document.getElementById("demo").innerHTML=musicInst.concat(dispaly);
+            document.getElementById("music").innerHTML=musicInst.indexOf('violen');
+            
+        </script>
+        <script>
+            document.getElementById("music").innerHTML=musicInst.sort();
+            document.getElementById("music").innerHTML=musicInst;
+        </script>
+        <script>
+            const data= [[],[],[]]
+        </script>
+    </body>
+</html>

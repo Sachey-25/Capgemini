@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>functions in Javascript</title>
+    </head>
+    <body>
+        <h2 id="function"></h2>
+        <h2 id="default"></h2>
+        <p> This is an example calls a function to convert from fahrenheit to Celcius</p>
+        <p id="demo"></p>
+        <form>
+            <input type="text" name="firstname" />
+        </form>
+        <script>
+            //in order to define the function - user defined function
+            function fun(){
+                document.getElementById("function").innerHTML=("Hello my name is function")
+            }
+            //invoking the function
+            fun();
+            //defualt parameters
+            //if you're writing a function and want to support optional parameters/arguments.
+            // you can specify default values by adding = after the name of parameter.
+            function hello(name='Sachin'){
+                console.log(`My name is : ${name}`)
+            }
+            //invoking the function
+            hello('Wipro')
+
+            //Genral programming
+            var product = myfun(43,56);
+            document.getElementById("default").innerHTML=product;
+
+            function myfun(number_one, number_two){
+                //Return a product of two numbers
+                return number_one*number_two;
+            }
+            function toCelsius(fahrenheit){
+                return(5/9)*(fahrenheit-32);
+            }
+            document.getElementById("demo").innerHTML=
+            "The tempreture is " + toCelsius(100) + " Celsius";
+            let number=20;
+            switch(number){
+                case 10:
+                    number='Ten'
+                    break;
+                case 20:
+                    number='Twenty'
+                    break;
+                case 30:
+                    number='Thirty'
+                    break;
+                case 40:
+                    number='Fourty'
+                    break;
+                case 50:
+                    number='Fifty'
+                    break;
+                default:
+                    number='not found'
+            }
+            console.log(`the value is ${number}`)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+   
+        <h2 style="text-align: center">JavaScript Arrow Functions</h2>
+        <script>
+            //generaal function implementation
+            function resul(number_one,number_two){
+                console.log( "fist function" + number_one*number_two);
+            }
+            //invoke the function 
+            resul(10,20)
+            //Another simplied approach with using the variable
+            let result = function(number_one,number_two){
+                console.log("Second function " + number_one*number_two)
+            }
+            result(20,40);
+        </script>
+
+        <script>
+            let data=(number_one,number_two) => 
+            console.log("fist function" + number_one*number_two)
+            //syntax:
+            // let <function_name> = (args1, args2, args3, args4, .......... argsN) => EXPRESSION
+            data(100,200);
+        </script>
+        <script>
+            let greet = () => console.log("Good Evening.. Guys!!!"); greet()
+            let greetings = () => document.write("Good Evening.. Guys!!!"); greetings()
+        </script>
+        <script>
+            let age=18;
+            let welcome = (age<18) ? () => 
+            console.log("Not eligible to vote") : () => console.log("Eligible to vote")
+            welcome();            
+        </script>
+        <script>
+            //multiline arrow functions
+            let sum = (num,numb) => {
+                let result = num+numb
+                return result;
+            }
+            let res = sum(23,32)
+            console.log(res)
+        </script>
+    
+    </body>
+</html>

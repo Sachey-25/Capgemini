@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScriptArrays</title>
+    </head>
+    <body>
+        <h2>Array Properties and Methods</h2>
+        <h2 id="info"></h2>
+        <h3 id="last"></h3>
+        <h3 id="another"></h3>
+        <h2 id="root"></h2>
+        <h1 id="cric"></h1>
+        <h4 id="add"></h4>
+        <button type="button" onclick="myfun()">Try it</button>
+        <script>
+            //The basic methods are 1. length() 2.sort()
+            const fruits=[ 'Pine','Leechi','Banana','Orange' ]
+            document.getElementById('info').innerHTML="The length of array fruits: "+fruits.length;
+            //Accessing the last lement of the array
+            var fruit=fruits[fruits.length-1]
+            document.getElementById("last").innerHTML=fruit;
+            document.getElementById("another").innerHTML=fruits[fruits.length-1];
+            var display="<ol>" //variable to  hold unirdered tag
+                for(let i=0;i<fruits.length;i++){
+                    display =display+"<li>"+fruits[i]+"</li>"
+
+                  /*  <ul>
+                        <li>Pine</li> fruits[0] here i=0
+                        <li>Leechi </li> fruits[1]here i=1
+                        <li>Banana </li> fruits [2] here i=2
+                        <li>Orange</li> fruits [3] here i=3
+                    </ul>
+                } //bullet display */
+            }
+            display=display+"</ol>"
+            document.getElementById("root").innerHTML=display;
+
+        </script>
+        <script>
+            const players=[ 'Sachin','Yuvraj','Rahul','Rohit' ]
+            
+            
+            let text="<ul>"          
+                //for each loop
+                players.forEach(fun);                
+                document.getElementById("cric").innerHTML = text;
+
+                function fun(something){
+                    text = text+"<li>"+something +"</li>"
+                }
+             
+                text = text+"</ul>"
+            
+        </script>
+        <script>
+            //Adding the elements dynamically
+            //push()
+            const employees_info = [ 'Sachin','Subhash','Chetan','Gopal' , 'Ganesh' ]
+            document.getElementById("add").innerHTML=employees_info;
+
+            function myfun(){
+                employees_info.push("STARCK");
+                document.write(employees_info)
+            }
+            //invoke he function
+            myfun()
+        </script>
+        <script>
+            const employees = [ 'Sachin','Subhash','Chetan','Gopal' , 'Ganesh' ]
+            employees.push("STARCK");  
+            let get="<ol>"
+                employees.forEach(add)                
+                document.getElementById("add").innerHTML=get;
+
+                function add(value){
+                              
+                get += "<li>"+value + "</li>"
+            }
+            get += "</ol>"
+            //Invokeing the function
+            add()
+
+        </script>
+    </body>
+
+</html>

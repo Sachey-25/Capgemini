@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSLet</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">JavaScript ES6</h2>
+        <h2 style="background-color: burlywood;" id="example"></h2>
+        
+        <script>
+            class employee{
+                               
+                constructor(id,name,salary){
+                    this.id=id,
+                    this.name=name,
+                    this.salary=salary
+                }
+            }
+            //Create an object
+            const object = new employee(101,'Sachin','10000');
+            document.getElementById('example').innerHTML= "Employeeinfo :" + object.id + object.name + object.salary;
+        </script>
+        <script>
+            const first_name="Sachin"
+            const last_name="A"
+            console.log('Hello' + first_name + " " + last_name)
+            console.log(`Hello ${first_name} ${last_name}`)
+        </script>
+        <script>
+            //JavaScript Destructing
+            const person={
+                name:'Sachin',
+                age:28,
+                gender:'male'
+            }
+            let name=person.name
+            let age=person.age
+            let gender=person.gender
+            
+            console.log(name)
+            console.log(age)
+            console.log(gender)
+
+            //ES6 
+            const human={
+                name1:'Sachin',
+                age1:28,
+                gender1:'male'
+            }
+            let { name1, age1, gender1 } =human
+
+            console.log(name1)
+            console.log(age1)
+            console.log(gender1)
+        </script>
+    </body>
+</html>
